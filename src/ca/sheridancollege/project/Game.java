@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
+    
     public static void main(String[] args) {
         List<Player> players = new ArrayList<>();
         players.add(new Player("Player 1") {});
@@ -31,5 +32,6 @@ public class Game {
 
         GroupOfCards game = new GroupOfCards(players, cards);
         game.play();
+        
     }
 }
