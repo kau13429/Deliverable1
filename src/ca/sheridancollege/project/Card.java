@@ -12,14 +12,32 @@ package ca.sheridancollege.project;
  * @author dancye
  */
 public abstract class Card {
-    //default modifier for child classes
+    private final String value;
+    private boolean flipped;
 
-    /**
-     * Students should implement this method for their specific children classes
-     *
-     * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
-     */
+    public Card(String value) {
+        this.value = value;
+        this.flipped = false;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public boolean isFlipped() {
+        return flipped;
+    }
+
+    public void flip() {
+        flipped = !flipped;
+    }
+
     @Override
-    public abstract String toString();
-
+    public String toString() {
+        if (flipped) {
+            return value;
+        } else {
+            return "*";
+        }
+    }
 }
