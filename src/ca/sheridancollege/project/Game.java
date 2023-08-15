@@ -26,7 +26,7 @@ public class Game {
         cards.add(new Card("C") {});
         cards.add(new Card("C") {});
         cards.add(new Card("D") {});
-        cards.add(new Card("D") {});
+        cards.add(new Card("2D") {});
 
         GroupOfCards game = new GroupOfCards(players, cards);
         game.play();
