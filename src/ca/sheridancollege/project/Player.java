@@ -10,40 +10,57 @@ package ca.sheridancollege.project;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
+ * @modified Prabhnoor Grewal
+ * @date 14 August,2023
+ * 
+=======
+
  */
 public abstract class Player {
 
-    private String name; //the unique name for this player
+    private String name;     // The name of the player
+    private int score;       // The score of the player
 
     /**
-     * A constructor that allows you to set the player's unique ID
-     *
-     * @param name the unique ID to assign to this player.
+     * Constructor to create a player with a given name.
+     * The player's score is initially set to zero.
+     * 
+     * @param name The name of the player.
      */
     public Player(String name) {
         this.name = name;
+        this.score = 0;
     }
 
     /**
-     * @return the player name
+     * Get the name of the player.
+     * 
+     * @return The name of the player.
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Ensure that the playerID is unique
-     *
-     * @param name the player name to set
+     * Get the score of the player.
+     * 
+     * @return The score of the player.
      */
-    public void setName(String name) {
-        this.name = name;
+    public int getScore() {
+        return score;
     }
 
     /**
-     * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
-     * with logic to play your game.
+     * Increment the player's score by 1.
      */
-    public abstract void play();
+    public void incrementScore() {
+        score++;
+    }
 
+    /**
+     * Reset the player's score to zero.
+     */
+    public void resetScore() {
+      score=0;
+}
 }
