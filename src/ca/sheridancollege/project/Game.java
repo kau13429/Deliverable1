@@ -1,7 +1,7 @@
 /**
  * SYST 17796 Project Base code.
  * Students can modify and extend to implement their game.
- * @author Arshdeep kaur 8 july 2023
+ * @author Arshdeep kaur  14 August 2023
  */
 package ca.sheridancollege.project;
 
