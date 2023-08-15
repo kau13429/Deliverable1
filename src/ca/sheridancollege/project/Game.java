@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
  * @Arshdeep kaur 
- * 8 july 2023
+ * 14 August 2023
  */
 package ca.sheridancollege.project;
 
